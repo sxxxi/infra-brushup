@@ -1,0 +1,7 @@
+services:
+  tf:
+    image: hashicorp/terraform:latest
+    volumes:
+      - ./src:/app
+    working_dir: /app
+    env_file: ".env"
